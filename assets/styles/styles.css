@@ -1,0 +1,77 @@
+/* Variables - Couleurs */
+:root {
+  --white: #fff;
+  --black: #000;
+  --blue: #154c79;
+  --lightgrey: #d3d3d3;
+}
+
+/* general */
+
+main {
+  min-height: 2000px;
+}
+
+/* Mise en forme du header et de la bannière*/
+header {
+  width: 100%;
+}
+
+.ban-container img {
+  width: 100%;
+  position: relative;
+  top: 4px;
+}
+
+/* Mise en forme du Menu */
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: var(--blue);
+  border-bottom: 5px solid var(--black);
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav ul li {
+  color: var(--white);
+  margin-left: 50px;
+}
+
+nav ul li:hover {
+  transform: scale(1.24);
+}
+
+nav ul li a {
+  color: var(--white);
+  font-size: 25px;
+}
+nav ul li a:hover {
+  color: var(--lightgrey);
+  border-bottom-style: solid;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 380px;
+  float: right;
+  margin-top: 20px;
+}
+
+.socials img {
+  width: 35px;
+  margin-right: 20px;
+  margin-top: 20px;
+  filter: drop-shadow(0px 0px 5px rgba(21, 76, 121, 0.7));
+}
+
+.socials img:hover {
+  transform: scale(1.24);
+}
